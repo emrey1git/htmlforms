@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <form>
+      <div class="border">
+        <div>
+          <label for="firstname">İsim</label>
+          <input
+            type="text"
+            id="firstname"
+            name="firstname"
+            placeholder="İsminizi Yazınız"
+            required
+            autofocus
+          />
+        </div>
+        <div class="lastname">
+          <label for="lastname">Soyad</label>
+          <input
+            type="text"
+            id="lastname"
+            name="lastname"
+            placeholder="Soyadınızı Yazınız"
+            required
+          />
+        </div>
+        <div>
+          <label for="age">Yaş</label>
+          <input
+            type="number"
+            id="age"
+            name="age"
+            placeholder="Yaşınızı Yazınız"
+            required
+          />
+        </div>
+        <div>
+          <label for="email">E-malinizi Giriniz</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="E-malinizi Giriniz"
+            required
+          />
+        </div>
+        <div>
+          <label for="sport"
+            >Spor Geçmişinizden Bahsediniz
+            <textarea
+              name="sport"
+              id="sport"
+              rows="5"
+              placeholder="Ayrıntılı anlatabilşirsinizz..."
+            ></textarea>
+          </label>
+        </div>
+        <div>
+          <label for="size">Toplam Spor Yılını Seçiniz</label>
+          <select name="size">
+            <option value="0-1">0-1 yıl</option>
+            <option value="1-3">1-3 yıl</option>
+            <option value="3-5" selected>3-5 yıl</option>
+            <option value="5+">5 yıldan fazla</option>
+          </select>
+        </div>
+        <button>Gönder</button>
+      </div>
+    </form>
+  </body>
+</html>
