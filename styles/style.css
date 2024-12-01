@@ -5,12 +5,18 @@ body {
     width: 100%;
     height: 100%;
 }
+h1 {
+    display: flex;
+    justify-content: center;
+   
+    
+}
 form {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+   
     
   
 }
@@ -19,13 +25,16 @@ form {
     padding: 20px;
     width: 400px;
     height: 620px;
-    gap: 20px;
+    gap: 10px;
     display: flex;
     flex-direction: column;
-    font-size: 25px;
+    font-size: 14px;
+    font-weight: bold;
+
     font-family: "Open Sans", sans-serif;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     background-color: whitesmoke;
+    border-radius: 10px;
 }
 textarea {
     width: 100%;
@@ -39,14 +48,36 @@ form div div {
 form:focus-within {
     color: rgb(84, 144, 38);
 }
-input {
+input  {
     width: 100%;
     height: 30px;
     border-radius: 5px;
 }
+.cinsiyet input {
+    width: auto;
+    height: auto;
+    /* Cinsiyet sınıfındaki input'ların genişliğini sıfırlayın */
+}
+.cinsiyet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.cinsiyet label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: bold;
+}
+h2  {
+    font-size: 14px;
+
+}
+.sozlesme input {
+    width: auto;
+        height: auto;
+}
 button {
-    width: 70px;
-    height: 20pxpx; 
-    margin-top: 5px;
+    margin-top: 8px;
     border-radius: 5px;
 }

@@ -13,6 +13,7 @@
     />
   </head>
   <body>
+    <h1>Spor Başvuru Formu</h1>
     <form>
       <div class="border">
         <div>
@@ -76,7 +77,24 @@
             <option value="5+">5 yıldan fazla</option>
           </select>
         </div>
-        <button>Gönder</button>
+        <div class="cinsiyet">
+          <h2>Cinsiyetinizi Seçiniz</h2>
+          <label>
+            <input type="radio" name="gender" value="erkek" required />
+            Erkek
+          </label>
+          <label>
+            <input type="radio" name="gender" value="kadın" required />
+            Kadın
+          </label>
+        </div>
+        <div class="sozlesme">
+          <label>
+            <input type="checkbox" name="sozlesme" value="onayladı" required />
+            Okudum Anladım
+          </label>
+        </div>
+        <button type="submit">Gönder</button>
       </div>
     </form>
   </body>
